@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Automated, zero-BS threat assessment for enterprise networks. Get the unvarnished truth about your attack surface.">
+    <meta name="referrer" content="no-referrer">
+    <title>Enterprise Threat Assessment</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black' stroke='%2300ff00' stroke-width='2'%3E%3Cpath d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script type="module" src="./assets/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#assessment">Skip to assessment</a>
+    <div class="page">
+      <header class="header">
+        <div class="identity" aria-label="Enterprise threat assessment">
+          <span class="logo" aria-hidden="true"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#00ff00" stroke-width="2" stroke-linecap="square"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg></span>
+          <span>Threat<br>assessment</span>
+        </div>
+        <span class="header-note">Enterprise networks</span>
+      </header>
+
+      <main class="main">
+        <section class="intro" aria-labelledby="headline">
+          <h1 id="headline">Your Infrastructure is Already Compromised. Stop Guessing. Start Auditing.</h1>
+          <p class="description">Automated, zero-BS threat assessment for enterprise networks. We don't sugar-coat your vulnerabilities. Enter your corporate details to get the unvarnished truth about your attack surface.</p>
+        </section>
+
+        <section class="assessment" id="assessment" aria-labelledby="form-heading">
+          <div class="form-heading"><span class="square" aria-hidden="true"></span><h2 id="form-heading">Request your assessment</h2></div>
+          <form id="lead-form" novalidate aria-describedby="form-error">
+            <div class="field">
+              <label for="email">Corporate Email Address</label>
+              <input id="email" name="email" type="email" placeholder="you@company.com" autocomplete="email" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" required aria-describedby="email-hint form-error">
+              <p class="hint" id="email-hint">Work email required.</p>
+            </div>
+            <div class="field">
+              <label for="company-size">Company Size</label>
+              <select id="company-size" name="companySize" required aria-describedby="form-error">
+                <option value="" disabled selected>Select company size</option>
+                <option value="1-50">1-50</option>
+                <option value="51-200">51-200</option>
+                <option value="201-500">201-500</option>
+                <option value="500+">500+</option>
+              </select>
+            </div>
+            <p id="form-error" class="error" role="alert" aria-atomic="true" hidden></p>
+            <button id="submit-lead" type="submit">Generate Threat Report</button>
+          </form>
+
+          <div id="success" class="success" role="status" aria-live="polite" tabindex="-1" hidden>
+            <span class="success-symbol" aria-hidden="true">[✓]</span>
+            <h3>Assessment running. Check your inbox.</h3>
+          </div>
+
+          <noscript><p class="error">Enable JavaScript to request your threat assessment.</p></noscript>
+        </section>
+      </main>
+
+      <footer class="footer"><span>Stop guessing. Start auditing.</span><span>Corporate emails only.</span></footer>
+    </div>
+  </body>
+</html>
