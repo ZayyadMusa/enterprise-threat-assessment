@@ -4,9 +4,6 @@
 
 A responsive corporate lead form with company-email validation, company-size selection and explicit loading, success and failure states. Built with TypeScript, HTML and CSS.
 
-## Development
-
-Run `npm ci`, `npm run check`, `npm run build`, and `npm test`. Serve `dist/` on a static HTTPS host, or import the repository into Vercel.
 
 ## Lead delivery
 
